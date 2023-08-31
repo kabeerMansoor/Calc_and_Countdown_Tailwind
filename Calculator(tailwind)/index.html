@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <h1>CALCULATOR:</h1>
+    <div class="box bg-red-700  sm:w-6/12 md:w-96 lg:w-96 xl:w-96 h-96 m-auto mt-20 rounded-2xl">
+        <div class="screen text-center" >
+        <input type="text" class="mt-4 p-3 w-3/4" id="screen" placeholder="Enter Values..." />
+    </div>
+        <div class="buttons flex justify-center mt-8">
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(9)">9</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(8)">8</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(7)">7</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint('+')">+</button>
+        </div>
+        <div class="buttons flex justify-center mt-8">
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(6)">6</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(5)">5</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(4)">4</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint('-')">-</button>
+        </div>
+        <div class="buttons flex justify-center mt-8">
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(3)">3</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(2)">2</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint(1)">1</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint('*')">*</button>
+        </div>
+        <div class="buttons flex justify-center mt-8">
+            <button class="py-2 px-3 w-16 bg-green-500 text-white rounded-xl border-2 border-black mx-4" onclick="deleteAll()">C</button>
+            <button class="py-2 px-3 w-16 bg-yellow-500 text-white rounded-xl border-2 border-black mx-4" onclick="deleteOneCharacter()">DEL</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="equal()">=</button>
+            <button class="py-2 px-3 w-16 bg-black text-white rounded-xl border-2 border-black mx-4" onclick="numberprint('/')">/</button>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
